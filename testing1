@@ -1,1 +1,4 @@
-echo "output"
+# Basic deploy of a service
+- terraform:
+    project_path: '{{ /opt/terraform }}'
+    state: present
