@@ -1,0 +1,9 @@
+---
+- hosts: hosts
+  tasks:
+  - name: "Plan EC2"
+    terraform:
+      project_path: /opt/terraform
+      binary_path: /opt/terraform/terraform
+      plan_file: /opt/terraform/ec2_plan
+      state: present
