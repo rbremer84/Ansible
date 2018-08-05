@@ -1,0 +1,8 @@
+---
+- hosts: hosts
+  tasks:
+  - name: "Destroy EC2"
+    terraform:
+      project_path: /opt/terraform
+      binary_path: /opt/terraform/terraform
+      state: absent
