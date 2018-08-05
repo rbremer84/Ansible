@@ -5,5 +5,5 @@
     terraform:
       project_path: /opt/terraform
       binary_path: /opt/terraform/terraform
-      plan_file: /opt/terraform/ec2_plan
+      plan_file: /opt/terraform/ec2.plan
       state: planned
