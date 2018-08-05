@@ -1,7 +1,7 @@
 ---
 - hosts: hosts
   tasks:
-  - name: "Create EC2 1"
+  - name: "Create EC2"
     terraform:
       project_path: /opt/terraform
       binary_path: /opt/terraform/terraform
