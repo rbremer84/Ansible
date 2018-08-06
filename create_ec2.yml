@@ -6,6 +6,6 @@
   - name: "Create EC2"
     terraform:
       project_path: '{{ workspace }}/tf_scripts/'
-      binary_path: '{{ workspace }}/tf_scripts/terraform'
+      binary_path: '{{ workspace }}/terraform'
       plan_file: '{{ workspace }}/tf_scripts/ec2.plan'
       state: planned
