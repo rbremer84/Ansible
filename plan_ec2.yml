@@ -3,7 +3,7 @@
   vars:
     workspace: "{{ lookup('env','workspace') }}"
   tasks:
-  - name: "Create EC2"
+  - name: "Plan EC2"
     terraform:
       project_path: '{{ workspace }}/tf_scripts/'
       binary_path: '{{ workspace }}tf_scripts/terraform'
