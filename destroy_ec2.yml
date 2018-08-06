@@ -5,4 +5,6 @@
     terraform:
       project_path: /opt/terraform
       binary_path: /opt/terraform/terraform
+      variables:
+        region: us-west-1
       state: absent
