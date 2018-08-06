@@ -10,4 +10,7 @@
       plan_file: '{{ workspace }}/tf_scripts/ec2.plan'
       variables: 
         region: us-west-1
+        ami_ID: ami-0e86606d
+        instance_class: t2.micro
+        publickey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8ET/gyzfEzOHumSYDeTcX/XKFmcoLlw4YgyC1wFp0t9LrW2HP+WwhDqsrkroGRWuwgtxXAcs+tQki9xMXoCvqJDhedGmMiFa55jjrNhbJPBVFXMB0IT4bdsggGxNWipo3aUcsyhUrOisGoN65bqRezvbu9sY9VO4ljS1OBueI0+kGB6LN10KbghqWKXP6iDGAEPruSXlLxzp2yy+i7kAWhh5LB9CZwO/YRe/p3uQThNMK0ES09Qfxfqt7lP0dD/oB5m45S+0Eg/MEwBiQ48jGIFrXjRwGzKiun5b0How0F6uxgWbZct0OzdFp81JOuZVZtPKaPkrP1SScCNPRr72j ron@ron-Latitude-E7450"
       state: planned
