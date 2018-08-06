@@ -1,10 +1,12 @@
 ---
 - hosts: hosts
+  vars:
+    workspace: "{{ lookup('env','WORKSPACE') }}"
   tasks:
   - name: "Destroy EC2"
     terraform:
-      project_path: /opt/terraform
-      binary_path: /opt/terraform/terraform
+      project_path: '{{ workspace }}/tf_scripts/'
+      binary_path: '{{ workspace }}/tf_scripts/terraform'
       variables:
         region: us-west-1
       state: absent
