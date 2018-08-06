@@ -1,7 +1,7 @@
 ---
 - hosts: hosts
   vars:
-    workspace: "{{ lookup('env','workspace') }}"
+    workspace: "{{ lookup('env','WORKSPACE') }}"
   tasks:
   - name: "Plan EC2"
     terraform:
